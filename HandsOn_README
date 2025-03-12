@@ -1,0 +1,70 @@
+====================================================================== 
+
+||---->>		Intruções Para Hands On		<<----||
+
+======================================================================
+
+
+O "Hands On" é um script em Python, desenvolvido no ambiente Google Colab, que implementa funções para leitura e análise de dados em arquivos de formato tabular, como arquivos ".TSV". O script processa os dados extraídos desses arquivos para gerar gráficos estatísticos baseados nas tabelas. Antes de executá-lo, é necessário realizar algumas verificações preliminares. Portanto, siga o procedimento descrito abaixo.
+
+
+[ 1 ] - Verifique se as tabelas foram criadas corretamente.
+
+	[1.1] - Verifique se as tabelas foram salvas no formato tabelado (.tsv).
+
+	[1.2] - Verifique se foram criadas duas tabelas, sendo uma para o conteúdo (train.tsv) e outra para a verificação dos dados (validation.tsv).
+
+	[1.3] - Verifique se as tabelas foram montadas corretamente com base no exemplo abaixo:
+
+		"|title		|tags						|"
+
+		 |(nome do objeto)	|['caracteristica-01', 'caracteristica-02']	|
+		 
+
+[ 2 ] - Após baixar o arquivo "Hands On" do GitHub, faça:
+
+	[2.1] - Localize o arquivo em seu computador, geralmente na pasta "Downloads".
+
+	[2.2] - Clique com o botão direito sobre o arquivo "Hands On.zip" e clique em "Extrair aqui".
+
+	[2.3] - Localize as duas tabelas criadas para usar no script.
+
+	[2.4] - Segurando a tecla "CTRL", selecione ambas as tabelas.
+
+	[2.5] - Com ambas as tabelas selecionadas, use o comando "CTRL + X" para mover ambas de uma única vez.
+
+	[2.6] - Após usar o comando para mover as tabelas, abra a pasta que foi extraída anteriormente, a pasta "Hands On".
+
+	[2.7] - Com a pasta aberta, cole ambas as tabelas dentro da pasta usando o comando "CTRL + V".
+	
+
+[ 3 ] - Com todos os arquivos necessários prontos para o upload para o Google Drive, faça:
+
+	[3.1] - Abra o navegador e faça o login do e-mail desejado.
+
+	[3.2] - Com o e-mail logado, abra o Google Drive.
+
+	[3.3] - Com a página do Google Drive aberta, clique em "+ NOVO".
+
+	[3.4] - Após abrir uma pequena janela no canto da página, clique em "Upload De Pasta".
+
+	[3.5] - Localize a pasta "Hands On" no computador e clique em "Fazer Upload".
+
+
+[ 4 ] - Com o upload da pasta feito e a página do Google Drive aberta, faça:
+
+	[4.1] - Abra a pasta "Hands On" no Google Drive.
+
+	[4.2] - Com a pasta aberta, clique no arquivo "Hands On.ipynb" para abrir o arquivo no navegador pelo Google Colab.
+
+	[4.3] - Com o arquivo aberto, procure pela etapa 3 chamada "Step 3: Importing and cleaning training and validation data files, with specified file paths for each dataset".
+
+	[4.4] - Após localizar a etapa, procure pelas frases abaixo destacadas em vermelho para alterar o endereço dos arquivos.
+
+		"train = read_data('/content/drive/MyDrive/hands/teste-02.tsv')"
+
+		"validation = read_data('/content/drive/MyDrive/hands/teste-01.tsv')"
+
+	[4.5] - Ao encontrar as frases, basta apagar o final da linha que seria ".../hands/teste.tsv" e substituir por ".../Hands On/(nome_do_arquivo_tabela).tsv" 
+
+	[4.6] - Com os endereços alterados, use o comando "CTRL + 9" para executar todo o script.
